@@ -5,16 +5,37 @@
  */
 package startdev;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
  */
 class Task1 {
-    public void run(){
+    
+    public void run() {
+        
         System.out.println("----- Задача 1 ------");
+        
+        
+        
+        String enteredString;
+        double celsTemp, fareTemp;
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Введите число градусов по Цельсию: ");
+        
+        enteredString = scanner.nextLine();
+        celsTemp = Integer.parseInt(enteredString);
+        
         // решение задачи
         System.out.println("По Фарингейту это будет: ");
+        
+        fareTemp = celsTemp * 1.8 + 32;
+        System.out.println(fareTemp);
+        
+        
+        
         System.out.println("----- конец задачи 1 ------");
     }
 }
