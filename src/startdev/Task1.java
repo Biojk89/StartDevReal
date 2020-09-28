@@ -15,7 +15,7 @@ class Task1 {
     
     public void run() {
         
-        System.out.println("----- Задача 1 ------");
+        System.out.println("-----  Задача 1  ------");
         
         
         
